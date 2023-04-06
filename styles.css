@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 600px;
+  height: 800px;
+  padding: 16px;
+  position: relative;
+}
+.container header {
+  text-align: center;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: 1px solid grey;
+  border-radius: 6px;
+}
+
+.name-group,
+.password-group,
+.button-group {
+  display: flex;
+  gap: 15px;
+}
+
+.terms {
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+}
+
+.terms input {
+  margin-bottom: 15px;
+  margin-left: -15px;
+}
+
+.agree {
+  padding: 7px;
+  font-weight: bold;
+}
+
+.terms span {
+  background-color: #318ce7;
+  color: white;
+  padding: 4px;
+  border-radius: 5px;
+}
+
+.terms a {
+  color: dodgerblue;
+  text-decoration: none;
+}
+
+button {
+  background-color: #04aa6d;
+  color: white;
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.registerbtn {
+  padding: 14px 20px;
+  background-color: #318ce7;
+}
+
+@media screen and (max-width: 600px) {
+  .name-group,
+  .password-group,
+  .button-group {
+    width: 100%;
+    flex-direction: column;
+    margin-top: 0;
+  }
+}
